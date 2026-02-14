@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treviño AI Solutions | Automatización e Inteligencia Artificial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(30, 64, 175, 0.2) 0%, rgba(2, 6, 23, 1) 70%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.3);
+        }
+
+        /* Animación simple de entrada */
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-white">Treviño <span class="text-blue-500">AI Solutions</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#inicio" class="hover:text-blue-400 transition">Inicio</a>
+                    <a href="#servicios" class="hover:text-blue-400 transition">Servicios</a>
+                    <a href="#nosotros" class="hover:text-blue-400 transition">Nosotros</a>
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 fade-in leading-tight">
+                Impulsamos tu Futuro con <br>
+                <span class="text-gradient">Inteligencia Artificial</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 fade-in" style="animation-delay: 0.2s;">
+                Especialistas en automatización de procesos con n8n, despliegue de modelos locales seguros (Ollama) y soluciones personalizadas de IA para empresas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in" style="animation-delay: 0.4s;">
+                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105">
+                    Empezar Ahora
+                </a>
+                <a href="#servicios" class="glass hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all border border-slate-700">
+                    Ver Servicios
+                </a>
+            </div>
+        </div>
+        
+        <!-- Elementos decorativos -->
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-indigo-500/10 rounded-full blur-[100px]"></div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-500 font-semibold tracking-wide uppercase mb-2">Soluciones</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white">¿Cómo podemos ayudarte?</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="glass p-8 rounded-2xl border border-slate-800 transition-all card-hover">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Automatización n8n</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Conectamos tus aplicaciones favoritas para crear flujos de trabajo autónomos que ahorran cientos de horas al mes.
+                    </p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="glass p-8 rounded-2xl border border-slate-800 transition-all card-hover">
+                    <div class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-6 text-indigo-400">
+                        <i class="fas fa-server text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">IA Local (Ollama)</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Implementamos modelos de lenguaje en tu propia infraestructura para garantizar máxima privacidad y cero costos por token.
+                    </p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="glass p-8 rounded-2xl border border-slate-800 transition-all card-hover">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6 text-cyan-400">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Custom RAG</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Creamos sistemas que "leen" tus propios documentos para que la IA responda basándose exclusivamente en tu conocimiento empresarial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros / Tech Stack -->
+    <section id="nosotros" class="py-24 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold text-white mb-6">Expertos en implementación práctica</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    En <strong>Treviño AI Solutions</strong>, no solo hablamos de futuro; lo construimos. Ubicados en Allende, Nuevo León, ayudamos a empresas a cruzar la brecha tecnológica mediante el uso ético y eficiente de la Inteligencia Artificial.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span>Enfoque en retorno de inversión (ROI)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span>Soporte técnico especializado y local</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span>Soberanía de datos con modelos On-Premise</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-6 rounded-xl text-center border border-slate-700">
+                    <p class="text-3xl font-bold text-blue-500">+100</p>
+                    <p class="text-sm text-slate-400 uppercase tracking-wider">Workflows n8n</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center border border-slate-700">
+                    <p class="text-3xl font-bold text-indigo-500">24/7</p>
+                    <p class="text-sm text-slate-400 uppercase tracking-wider">Operación Autónoma</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center border border-slate-700">
+                    <p class="text-3xl font-bold text-cyan-500">100%</p>
+                    <p class="text-sm text-slate-400 uppercase tracking-wider">Privacidad Local</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl text-center border border-slate-700">
+                    <p class="text-3xl font-bold text-emerald-500">Custom</p>
+                    <p class="text-sm text-slate-400 uppercase tracking-wider">Soluciones Únicas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass p-8 md:p-12 rounded-3xl border border-slate-800 relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold text-white mb-2">¿Listo para dar el siguiente paso?</h2>
+                        <p class="text-slate-400">Cuéntanos tu proyecto y un experto de <strong>Treviño AI Solutions</strong> se pondrá en contacto contigo.</p>
+                    </div>
+                    
+                    <form class="space-y-6" onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden');">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">Nombre</label>
+                                <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-400 mb-2">Email Empresarial</label>
+                                <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="tu@empresa.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">¿En qué podemos ayudarte?</label>
+                            <textarea rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="Describe brevemente tu necesidad..."></textarea>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition duration-300 transform hover:-translate-y-1">
+                            Enviar Solicitud
+                        </button>
+                        <p id="success-msg" class="hidden text-emerald-400 text-center mt-4">¡Gracias! Nos pondremos en contacto pronto.</p>
+                    </form>
+                </div>
+                <!-- Decoración -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-[10px]"></i>
+                </div>
+                <span class="text-lg font-bold text-white">Treviño <span class="text-blue-500">AI Solutions</span></span>
+            </div>
+            <p class="text-slate-500 text-sm text-center">
+                &copy; 2026 Treviño AI Solutions. <br class="md:hidden"> Allende, Nuevo León, México.
+            </p>
+            <div class="flex space-x-6 text-slate-400">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin-in text-lg"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-x-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad básica para el menú móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        btn.onclick = () => {
+            console.log('Mobile menu toggle');
+        };
+
+        // Efecto scroll para el navbar
+        window.onscroll = () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl', 'py-1');
+            } else {
+                nav.classList.remove('shadow-xl', 'py-1');
+            }
+        };
+    </script>
+</body>
+</html>
